@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ask_question"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:orientation="vertical"
+    tools:context="askmeanythong.com.askmeanythong.AskQuestion">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:id="@+id/layout_ask_question"
+            android:background="@drawable/border"
+            android:padding="10dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:hint="Type Your Question"
+                android:textSize="25dp"
+                android:backgroundTint="#bdbdbd"
+                android:inputType="textMultiLine"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="2dp"
+                android:paddingRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:gravity="right">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="or take a picture"
+                    android:textColor="#00e5ff"
+                    android:paddingRight="25dp"
+                    android:layout_gravity="center_vertical"/>
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/gallery"
+                    />
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/camera"
+                    android:layout_marginLeft="15dp"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="subject"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentTop="true"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:layout_gravity="bottom"
+       android:gravity="bottom"
+       android:orientation="vertical">
+
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="40dp"
+       android:layout_gravity="right"
+       android:background="#40C4FF"
+       android:id="@+id/layout_question_send"
+       android:layout_margin="10dp"
+       android:layout_alignParentRight="true">
+
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="#ffffff"
+           android:textSize="15dp"
+           android:background="#40C4FF"
+           android:text="Post" />
+
+       <ImageView
+           android:layout_width="20dp"
+           android:layout_height="20dp"
+           android:layout_gravity="center"
+           android:layout_marginRight="8dp"
+           android:src="@drawable/send"
+           />
+
+       </LinearLayout>
+
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="4dp"
+           android:background="#CFD8DC"/>
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:layout_gravity="bottom"
+           android:id="@+id/subject_selection"
+           android:layout_alignParentBottom="true"
+           android:orientation="horizontal"
+           android:gravity="center"
+           android:layout_margin="5dp"
+           android:weightSum="2">
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/android1"
+               android:layout_weight="0.5"
+               />
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="0.5"
+               android:src="@drawable/java"
+               />
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/visual"
+               android:layout_weight="0.5"
+               />
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/php"
+               android:layout_weight="0.5"
+               />
+       </LinearLayout>
+
+
+
+   </LinearLayout>
+
+
+</RelativeLayout>
